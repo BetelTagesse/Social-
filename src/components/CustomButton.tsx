@@ -1,8 +1,7 @@
-// "use client";
+import React from "react";
+import Button, { ButtonProps } from "@mui/material/Button";
 
-import Button from "@mui/material/Button";
-
-const CustomButton = ({ children, ...rest }) => {
+const CustomButton: React.FC<ButtonProps> = ({ children, ...rest }) => {
   return (
     <Button
       {...rest}

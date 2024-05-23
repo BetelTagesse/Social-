@@ -2,11 +2,11 @@
 
 import React from "react";
 
-import CrossSiteScripting from "@/components/CrossSiteScripting";
+import SqlInjection from "@/components/sql-injection/SqlInjection";
 
 
 const page:React.FC = () => {
-  return <CrossSiteScripting />;
+  return <SqlInjection />;
 };
 
 export default page;

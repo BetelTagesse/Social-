@@ -14,7 +14,7 @@ const messages = [
   },
   {
     message4:
-      "Unfortunately the popularity of your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.",
+      "The popularity of your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.",
   },
   {
     message5:
@@ -39,11 +39,11 @@ const messages = [
 
   {
     message10:
-      "Unfortunately the popularity of your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.!",
+      "Your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.!",
   },
   {
     message11:
-      "Unfortunately the popularity of your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.",
+      " Popularity of your site has also attracted the attention of hackers, who want to access your site for nefarious purposes.",
   },
   {
     message12:
@@ -55,7 +55,7 @@ const messages = [
   },
 
   {
-    message15: "Let's learn how to protect against cross-site scripting!",
+    message14: "Let's learn how to protect against cross-site scripting!",
   },
 ];
 

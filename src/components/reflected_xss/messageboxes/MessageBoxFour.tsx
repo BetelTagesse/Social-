@@ -4,9 +4,10 @@ import CustomSearchInput from '../CustomSearchInput';
 
 interface MessageBoxProps {
   imageSrc?: string;
+  imageSrc2?:string;
 }
 
-const MessageBoxFour: React.FC<MessageBoxProps> = ({ imageSrc }) => {
+const MessageBoxFour: React.FC<MessageBoxProps> = ({ imageSrc, imageSrc2 }) => {
   return (
     <Grid item xs={12} md={6}>
       <Box
@@ -28,7 +29,7 @@ const MessageBoxFour: React.FC<MessageBoxProps> = ({ imageSrc }) => {
               width: '100%',
             }}
           >
-            <img src="/assets/welp-com.png" alt="Welp " style={{  width: '100%', height: '100%' }} />
+            <img src={imageSrc2 || "/assets/welp-com.png"} alt="Welp " style={{  width: '100%', height: '100%' }} />
             <Box
               sx={{
                 backgroundColor: 'rgb(255, 0, 0)',

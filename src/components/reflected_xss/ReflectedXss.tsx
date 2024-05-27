@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Container, Grid, Paper, Typography, Button, Box } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CustomTypography from './CustomTypography';
-import MessageBox from './messageboxes/MessageBox';
-import MessageBoxTwo from './messageboxes/MessageBoxTwo';
-import MessageBoxThree from './messageboxes/MessageBoxThree'; // Import more message boxes as needed
+import MessageBox from './messageboxes/MessageBoxThirteen';
+import MessageBoxTwo from './messageboxes/MessageBoxTwelve';
+import MessageBoxThree from './messageboxes/MessageBoxEleven'; // Import more message boxes as needed
 
 import messages from './messages'; // Assuming this is an array of messages
 import MessageBoxFour from './messageboxes/MessageBoxFour';

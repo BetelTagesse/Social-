@@ -1,10 +1,13 @@
 // Second file: MessageBoxSeven.tsx
 import React from 'react';
 import { Box, Card, Grid, Paper, TextField, Typography } from '@mui/material';
-import FoodBankIcon from '@mui/icons-material/FoodBank';
-import searchpage from '../../assets/searchpage.png'
 
-const MessageBoxSeven: React.FC = () => {
+interface MessageBoxProps {
+  imageSrc3?: string;
+  // imageSrc2?string;
+}
+
+const MessageBoxSeven: React.FC<MessageBoxProps> = ({imageSrc3}) => {
   return (
     <Grid item xs={12} md={6}>
       {/* <Paper elevation={3} sx={{  maxWidth: 400 }}> */}
@@ -17,7 +20,8 @@ const MessageBoxSeven: React.FC = () => {
             width: '100%',
           }}
         >
-      <img src="/assets/mal-pensive.png" alt="mal-pensive" style={{ width: '50%', height: '50%' }} />
+
+      <img src = {imageSrc3 || "/assets/mal-pensive.png" } alt="mal-pensive" style={{ width: '50%', height: '50%' }} />
       <Box
           sx={{
             display: 'flex',

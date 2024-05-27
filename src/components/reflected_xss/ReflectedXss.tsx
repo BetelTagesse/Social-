@@ -12,7 +12,7 @@ import MessageBoxFive from './messageboxes/item5/MessageBoxFive';
 import MessageBoxSix from './messageboxes/item6/MessageBoxSix';
 import MessageBoxSeven from './messageboxes/MessageBoxSeven';
 import MessageBoxEight from './messageboxes/MessageBoxEight';
-import MessageBoxNine from './messageboxes/MessageBoxNine';
+import MessageBoxNine from './messageboxes/item9/MessageBoxNine';
 import MessageBoxTen from './messageboxes/MessageBoxTen';
 
 const ReflectedXss: React.FC = () => {

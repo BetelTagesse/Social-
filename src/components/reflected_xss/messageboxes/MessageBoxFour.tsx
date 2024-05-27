@@ -15,10 +15,11 @@ const MessageBoxFour: React.FC<MessageBoxProps> = ({ imageSrc }) => {
           flexDirection: 'row',
           alignItems: 'start',
           width: '100%',
+          gap:10
         }}
       >
 <img src={imageSrc || '/assets/mal-pensive.png'} alt="Welp page"  style={{ maxHeight: '300px', maxWidth: '300px' }} />
-        <Paper elevation={3}>
+        <Paper elevation={3} sx= {{width:'50%'}}>
           <Box
             sx={{
               display: 'flex',

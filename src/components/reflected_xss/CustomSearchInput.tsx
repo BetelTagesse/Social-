@@ -3,10 +3,23 @@ import { Box, TextField } from '@mui/material';
 
 const CustomSearchInput: React.FC = () => {
   return (
+    // <TextField
+  //   variant="outlined"
+  //   size="small"
+  //   placeholder="Enter your search..."
+  //   className="mx-5 mt-2 mb-20"
+  //   InputProps={{
+  //     style: {
+  //       borderRadius: '0.75rem',
+  //       borderColor: '#6b7280',
+  //     },
+  //   }}
+  // />
     <Box sx={{ mx: 5, mt: 2, mb: 2 }}>
       <TextField
         variant="outlined"
         placeholder="Enter your search..."
+        size='medium'
         sx={{
           '& .MuiOutlinedInput-root': {
             fontSize: '0.75rem', // Smaller font size
@@ -25,7 +38,7 @@ const CustomSearchInput: React.FC = () => {
               borderColor: '#4b5563', // Border color on focus
             },
           },
-          width: '100%',
+          // width: '100%',
         }}
       />
     </Box>

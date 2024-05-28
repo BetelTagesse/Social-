@@ -14,6 +14,9 @@ import MessageBoxSeven from './messageboxes/MessageBoxSeven';
 import MessageBoxEight from './messageboxes/MessageBoxEight';
 import MessageBoxNine from './messageboxes/item9/MessageBoxNine';
 import MessageBoxTen from './messageboxes/MessageBoxTen';
+import MessageBoxTwelve from './messageboxes/MessageBoxTwelve';
+import MessageBoxThirteen from './messageboxes/MessageBoxThirteen';
+import MessageBoxEleven from './messageboxes/MessageBoxEleven';
 
 const ReflectedXss: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,11 +48,11 @@ const ReflectedXss: React.FC = () => {
       case 9:
         return <MessageBoxTen />;
       case 10:
-        return <MessageBoxSeven />;
+        return <MessageBoxEleven />;
       case 11:
-        return <MessageBoxEight />;
+        return <MessageBoxTwelve />;
       case 12:
-        return <MessageBoxNine />;
+        return <MessageBoxThirteen />;
       default:
         return null;
     }

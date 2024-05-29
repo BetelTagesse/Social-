@@ -10,6 +10,7 @@ import MessageBoxFour from './MessageBoxFour';
 import MessageBoxFive from './MessageBoxFive';
 import MessageBoxSix from './MessageSix';
 import ParentComponent from './MessageBoxSeven';
+import MessageBoxSeven from './MessageBoxSeven';
 
 const CrossSiteScripting: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +40,7 @@ const CrossSiteScripting: React.FC = () => {
           case 5:
             return <MessageBoxSix />;
             case 6:
-              return <ParentComponent />;
+              return <MessageBoxSeven />;
       default:
         return null;
     }
